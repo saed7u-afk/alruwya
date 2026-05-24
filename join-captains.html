@@ -3,102 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>انضم كـ كابتن | الرؤيا العربية للخدمات اللوجستية</title>
+    <title>انضم ككابتن - الرؤيا العربية</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Cairo', sans-serif; }</style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased">
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between">
 
-    <header class="fixed top-0 left-0 right-0 bg-slate-950/80 backdrop-blur-md text-white z-50 shadow-2xl border-b border-slate-800/60">
+    <header class="bg-slate-950 border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-reverse space-x-3">
-                <div class="bg-amber-500 text-slate-950 p-2 rounded-lg font-bold text-xl shadow-md">الرؤيا</div>
-                <span class="text-xl font-bold tracking-wide text-white">الرؤيا العربية <span class="text-amber-500 font-medium text-base block lg:inline lg:mr-1">للوجستيات</span></span>
-            </div>
-            <nav class="flex space-x-reverse space-x-8 text-sm font-medium">
-                <a href="index.html" class="text-slate-300 hover:text-amber-500 transition duration-300">← العودة للرئيسية</a>
-            </nav>
+            <a href="index.html" class="flex items-center space-x-reverse space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl flex items-center justify-center shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-base font-bold text-white group-hover:text-amber-400 transition">الرؤيا العربية</span>
+                    <span class="text-[10px] text-amber-500 font-semibold tracking-wider">للخدمات اللوجستية</span>
+                </div>
+            </a>
+            <a href="index.html" class="text-sm font-medium text-amber-500 hover:text-amber-400 transition flex items-center space-x-reverse space-x-1">
+                <span>← العودة للمطالبة الرئيسية</span>
+            </a>
         </div>
     </header>
 
-    <section class="relative min-h-[45vh] flex items-center justify-center bg-slate-950 pt-20 overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center mix-blend-overlay"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/90 to-slate-950/40"></div>
-        
-        <div class="relative max-w-4xl mx-auto px-4 text-center text-white z-10 pt-10">
-            <span class="text-amber-500 font-bold text-xs bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full inline-block mb-4">فرص عمل واعدة</span>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight">انضم إلى أسطول الرؤيا العربية</h1>
-            <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-400">كن شريكاً في النجاح، ضاعف دخلك وسجل معنا ككابتن محترف بنظام عمل مرن ومزايا استثنائية.</p>
+    <main class="py-16 px-4 max-w-2xl mx-auto w-full flex-grow flex flex-col justify-center">
+        <div class="text-center mb-10">
+            <span class="text-amber-500 font-bold text-xs bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full uppercase">
+                بوابة أصحاب المركبات
+            </span>
+            <h1 class="text-3xl font-extrabold text-white mt-4 mb-3">انضم إلى فريق كباتن الرؤيا العربية</h1>
+            <p class="text-slate-400 text-xs sm:text-sm max-w-md mx-auto">
+                سجل بياناتك ومواصفات مركبتك الآن لتبدأ في استقبال طلبات الشحن والعمل معنا وزيادة دخلك.
+            </p>
         </div>
-    </section>
 
-    <section class="py-16 bg-slate-900 border-t border-slate-800/60 relative">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="bg-slate-950/50 border border-slate-800 p-8 sm:p-10 rounded-2xl shadow-2xl backdrop-blur-sm">
-                <h2 class="text-xl font-bold text-white mb-2 text-center">نموذج طلب انضمام كابتن</h2>
-                <p class="text-slate-400 text-xs text-center mb-8">يرجى تعبئة كافة الحقول بدقة وسيقوم فريق العمليات بالتواصل معك لإتمام المقابلة والاعتماد.</p>
+        <div class="bg-slate-900/40 p-6 sm:p-8 rounded-2xl border border-slate-800/80 shadow-2xl">
+            <form id="captainForm" class="space-y-5">
                 
-                <form action="#" method="POST" class="space-y-6">
-                    
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-slate-300 text-xs font-semibold mb-2">الاسم الكامل (رباعي)</label>
-                        <input type="text" required placeholder="مثال: أحمد عبد الله حسن الخالدي" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition duration-300">
+                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">الاسم الكامل</label>
+                        <input type="text" id="capName" required placeholder="فادي محمد" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
                     </div>
-
                     <div>
-                        <label class="block text-slate-300 text-xs font-semibold mb-2">رقم الهاتف النشط (واتساب)</label>
-                        <input type="tel" required placeholder="مثال: 07XXXXXXXX" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-white text-sm text-left focus:outline-none focus:border-amber-500 transition duration-300" dir="ltr">
+                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">رقم الهاتف (الواتساب)</label>
+                        <input type="tel" id="capPhone" required placeholder="07XXXXXXXX" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs text-left focus:outline-none focus:border-amber-500 transition" dir="ltr">
                     </div>
+                </div>
 
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div>
-                        <label class="block text-slate-300 text-xs font-semibold mb-2">العنوان الحالي بالتفصيل</label>
-                        <input type="text" required placeholder="المحافظة، المدينة، الشارع، أو أقرب معلم" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition duration-300">
+                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">نوع المركبة (مثلاً: ديانا، قاطرة)</label>
+                        <input type="text" id="capCarType" required placeholder="باص / شاحنة / ديانا" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
                     </div>
-
                     <div>
-                        <label class="block text-slate-300 text-xs font-semibold mb-2">نوع وحجم المركبة اللوجستية</label>
-                        <select required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-slate-300 text-sm focus:outline-none focus:border-amber-500 transition duration-300">
-                            <option value="" disabled selected>اختر نوع مركبتك...</option>
-                            <option value="pickup">ديانا / بيك أب (Open/Closed Pickup)</option>
-                            <option value="van">فان بضائع مغلق (Cargo Van)</option>
-                            <option value="truck_light">شاحنة خفيفة (3 طن - 5 طن)</option>
-                            <option value="truck_heavy">شاحنة ثقيلة / قاطرة ومقطورة (Trailer)</option>
-                            <option value="car">سيارة صغيرة / دراجة نارية (للطرود الخفيفة)</option>
-                        </select>
+                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">موديل / سنة الصنع</label>
+                        <input type="number" id="capCarModel" required placeholder="2024" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
                     </div>
-
                     <div>
-                        <label class="block text-slate-300 text-xs font-semibold mb-2">طبيعة جاهزيتك للعمل معنا</label>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
-                            
-                            <label class="flex items-center space-x-reverse space-x-3 bg-slate-900 border border-slate-800 p-4 rounded-lg cursor-pointer hover:border-amber-500/50 transition">
-                                <input type="radio" name="availability" value="full_time" checked class="text-amber-500 focus:ring-amber-500 bg-slate-950 border-slate-800">
-                                <span class="text-sm text-slate-200">دوام كامل (جاهزية تامة)</span>
-                            </label>
-
-                            <label class="flex items-center space-x-reverse space-x-3 bg-slate-900 border border-slate-800 p-4 rounded-lg cursor-pointer hover:border-amber-500/50 transition">
-                                <input type="radio" name="availability" value="part_time" class="text-amber-500 focus:ring-amber-500 bg-slate-950 border-slate-800">
-                                <span class="text-sm text-slate-200">دوام جزئي / طلبات حرة</span>
-                            </label>
-
-                        </div>
+                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">رقم لوحة المركبة</label>
+                        <input type="text" id="capCarPlate" required placeholder="أردني - XXXXX" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
                     </div>
+                </div>
 
-                    <div class="pt-4">
-                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-4 rounded-lg text-base transition duration-300 shadow-lg block text-center">
-                            إرسال طلب الانضمام ككابتن
-                        </button>
-                    </div>
+                <div id="formStatus" class="hidden text-xs py-2.5 text-center rounded-lg font-semibold"></div>
 
-                </form>
-            </div>
-
+                <button type="submit" id="submitBtn" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 rounded-lg text-sm transition shadow-lg disabled:opacity-50 tracking-wide">
+                    تقديم طلب الانضمام
+                </button>
+            </form>
         </div>
-    </section>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-[11px] text-slate-500">
+        <div>© 2026 <span class="text-amber-500">الرؤيا العربية للخدمات اللوجستية</span>. جميع الحقوق محفوظة.</div>
+    </footer>
+
+    <script>
+        document.getElementById('captainForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const scriptUrl = 'https://script.google.com/macros/s/AKfycbxnaanpr38bcba-51DN-kl6yGyQA2pRvIfad4iHWaDKiMjYL96HL6wUg_0HfknM-Gtu/exec'; // ضع رابط الـ Apps Script الجديد هنا
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const statusDiv = document.getElementById('formStatus');
+            
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'جاري إرسال طلبك الفخم...';
+            
+            const formData = {
+                name: document.getElementById('capName').value,
+                phone: document.getElementById('capPhone').value,
+                carType: document.getElementById('capCarType').value,
+                carModel: document.getElementById('capCarModel').value,
+                carPlate: document.getElementById('capCarPlate').value
+            };
+            
+            fetch(scriptUrl, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(() => {
+                statusDiv.classList.remove('hidden', 'bg-red-500/10', 'text-red-400');
+                statusDiv.classList.add('bg-emerald-500/10', 'text-emerald-400');
+                statusDiv.innerText = '✨ كفو يا كابتن! تم استلام طلبك بنجاح، وسيتواصل معك فريق الدعم الفني قريباً.';
+                
+                document.getElementById('captainForm').reset();
+            })
+            .catch(error => {
+                statusDiv.classList.remove('hidden', 'bg-emerald-500/10', 'text-emerald-400');
+                statusDiv.classList.add('bg-red-500/10', 'text-red-400');
+                statusDiv.innerText = '❌ نعتذر منك، حدث خطأ شبكة. حاول الإرسال مرة أخرى.';
+                console.error('Error!', error.message);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerText = 'تقديم طلب الانضمام';
+            });
+        });
+    </script>
 
 </body>
 </html>
