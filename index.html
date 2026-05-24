@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرؤيا العربية للخدمات اللوجستية | التميز في النقل والخدمات اللوجستية</title>
+    <!-- استدعاء مكتبة Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استدعاء خط كايرو الأنيق -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+    <!-- 1. القائمة العلوية الثابتة الفخمة (Navbar) -->
+    <header class="fixed top-0 left-0 right-0 bg-slate-950/80 backdrop-blur-md text-white z-50 shadow-2xl border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- الشعار (Logo) -->
+           <a href="#home" class="flex items-center space-x-reverse space-x-3.5 group">
+    <div class="relative w-11 h-11 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl flex items-center justify-center shadow-lg shadow-amber-500/10 group-hover:shadow-amber-500/20 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+        </svg>
+    </div>
+    <div class="flex flex-col">
+        <span class="text-lg font-extrabold tracking-wide text-white leading-none mb-1 group-hover:text-amber-400 transition duration-300">الرؤيا العربية</span>
+        <span class="text-[10px] font-bold tracking-widest text-amber-500 uppercase leading-none">للخدمات اللوجستية</span>
+    </div>
+</a>
+
+            <!-- أزرار التنقل -->
+<nav class="hidden md:flex space-x-reverse space-x-8 text-sm font-medium">
+    <a href="#home" class="text-amber-500 hover:text-amber-400 transition duration-300">الرئيسية</a>
+    <a href="#services" class="text-slate-300 hover:text-amber-500 transition duration-300">خدماتنا</a>
+    <a href="#about" class="text-slate-300 hover:text-amber-500 transition duration-300">من نحن</a>
+    <a href="join-captains.html" class="text-amber-400 hover:text-amber-300 transition duration-300 font-bold">انضم ككابتن ★</a>
+    <a href="#contact" class="text-slate-300 hover:text-amber-500 transition duration-300">اتصل بنا</a>
+</nav>
+          
+    </header>
+
+    <!-- 2. الواجهة الرئيسية (Hero Section) - بخلفية سينمائية داكنة -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-slate-950 pt-20 overflow-hidden">
+        <!-- الصورة الخلفية مع دمج داكن قوي جداً لتعطي عمق للموقع -->
+        <div class="absolute inset-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/90 to-slate-950/40"></div>
+
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white z-10">
+            <span class="text-amber-500 font-semibold tracking-widest text-sm uppercase bg-amber-500/10 px-4 py-1.5 rounded-full inline-block mb-6 border border-amber-500/20">
+                آفاق جديدة في عالم اللوجستيات
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                نربط أعمالك بالعالم بذكاء <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">وااحترافية لا تساوم</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-slate-400 mb-10 leading-relaxed">
+                في الرؤيا العربية، نقدم حلولاً لوجستية متكاملة تشمل الشحن الدولي، التخليص الجمركي، وإدارة سلاسل الإمداد بأعلى معايير الأمان والسرعة.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#services" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-8 py-4 rounded-md text-base transition duration-300 shadow-lg text-center">
+                    اكتشف خدماتنا
+                </a>
+                <a href="#about" class="w-full sm:w-auto bg-transparent hover:bg-white/5 text-white font-medium px-8 py-4 rounded-md text-base transition duration-300 border border-slate-800 text-center">
+                    تعرف علينا أكثر
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. قسم خدماتنا (Services Section) - تم تحويله بالكامل للثيم الداكن الفخم -->
+    <section id="services" class="py-28 bg-slate-950 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- عنوان القسم -->
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-amber-500 font-bold text-xs bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full uppercase tracking-wider">
+                    ماذا نقدم؟
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-4">
+                    خدمات لوجستية متكاملة مصممة لنمو أعمالك
+                </h2>
+                <div class="h-1 w-16 bg-amber-500 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- شبكة البطاقات الداكنة (Dark Cards Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- كرت 1: الشحن الدولي -->
+                <div class="bg-slate-900/40 rounded-xl p-8 border border-slate-800/60 shadow-xl hover:shadow-amber-500/5 hover:border-amber-500/40 hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition duration-300 shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition duration-300">الشحن الدولي الشامل</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">سواء كان شحناً برياً عبر أساطيل حديثة، أو بحرياً عبر الحاويات، أو جوياً سريعاً؛ نضمن وصول بضائعك بأمان.</p>
+                </div>
+
+                <!-- كرت 2: التخليص الجمركي -->
+                <div class="bg-slate-900/40 rounded-xl p-8 border border-slate-800/60 shadow-xl hover:shadow-amber-500/5 hover:border-amber-500/40 hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition duration-300 shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition duration-300">التخليص الجمركي</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">فريقنا يتولى كافة الإجراءات والوثائق الجمركية في الموانئ والمنافذ بكل سلاسة لتجنب أي تأخير.</p>
+                </div>
+
+                <!-- كرت 3: التخزين الذكي -->
+                <div class="bg-slate-900/40 rounded-xl p-8 border border-slate-800/60 shadow-xl hover:shadow-amber-500/5 hover:border-amber-500/40 hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition duration-300 shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition duration-300">التخزين الذكي</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">مستودعات مجهزة بأعلى مستويات الأمان والتحكم البيئي، مع نظام تتبع جرد ذكي يتيح لك مراقبة مخزونك.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- 5. قسم اتصل بنا وطلب الاقتباس (Contact Section) -->
+    <<!-- 5. قسم اتصل بنا (Contact Section) - مبسط للاستفسارات فقط -->
+    <section id="contact" class="py-28 bg-slate-950 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- عنوان القسم المعدل -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-500 font-bold text-xs bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full uppercase tracking-wider">
+                    تواصل معنا
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-4">
+                    يسعدنا الإجابة على استفساراتك
+                </h2>
+                <div class="h-1 w-16 bg-amber-500 mx-auto rounded-full mb-4"></div>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    إذا كان لديك أي سؤال حول خدماتنا اللوجستية، تواصل معنا مباشرة وسيرد عليك فريقنا في أقرب وقت.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto">
+                
+                <!-- معلومات الاتصال -->
+                <div class="lg:col-span-4 space-y-6 flex flex-col justify-center">
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800/80">
+                        <h4 class="text-amber-500 font-bold text-sm mb-2">المقر الرئيسي</h4>
+                        <p class="text-slate-300 text-sm">الأردن،عمان</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800/80">
+                        <h4 class="text-amber-500 font-bold text-sm mb-2">البريد الإلكتروني</h4>
+                        <p class="text-slate-300 text-sm">alruwya.alarabia@gmail.com
+                        </p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800/80">
+                        <h4 class="text-amber-500 font-bold text-sm mb-2">الدعم الفني والعمليات</h4>
+                        <p class="text-slate-300 text-sm" dir="ltr">+962 7 92728220</p>
+                    </div>
+                </div>
+
+                <!-- فورم تواصل بسيط وفخم -->
+                <div class="lg:col-span-8 bg-slate-900/30 p-8 sm:p-10 rounded-2xl border border-slate-800/60 shadow-xl backdrop-blur-sm">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-slate-300 text-xs font-semibold mb-2">الاسم</label>
+                                <input type="text" placeholder="فادي محمد" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition duration-300">
+                            </div>
+                            <div>
+                                <label class="block text-slate-300 text-xs font-semibold mb-2">رقم الهاتف أو الإيميل</label>
+                                <input type="text" placeholder="07XXXXXXXX أو email@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition duration-300">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-slate-300 text-xs font-semibold mb-2">نص الرسالة أو الاستفسار</label>
+                            <textarea rows="4" placeholder="اكتب استفسارك هنا..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition duration-300"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-4 rounded-lg text-base transition duration-300 shadow-lg block text-center">
+                            إرسال الاستفسار
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. تذييل الصفحة السفلي (Footer) -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-slate-400 font-medium">
+                © 2026 <span class="text-amber-500">الرؤيا العربية للخدمات اللوجستية</span>. جميع الحقوق محفوظة.
+            </div>
+            <div class="flex space-x-reverse space-x-6">
+                <a href="#home" class="hover:text-amber-500 transition">الرئيسية</a>
+                <a href="#services" class="hover:text-amber-500 transition">خدماتنا</a>
+                <a href="#about" class="hover:text-amber-500 transition">من نحن</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
