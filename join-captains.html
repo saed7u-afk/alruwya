@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>انضم ككابتن - الرؤيا العربية</title>
-        <link rel="icon" type="image/png" href="logo(1).png">
+    <link rel="icon" type="image/png" href="logo(1).png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +53,7 @@
             <h1 class="text-3xl font-extrabold text-white mt-4 mb-3">انضم إلى فريق كباتن الرؤيا العربية</h1>
             <p class="text-slate-400 text-xs sm:text-sm max-w-md mx-auto">
                 سجل بياناتك ومواصفات مركبتك الآن لتبدأ في استقبال طلبات الشحن والعمل معنا وزيادة دخلك.
-                                        كون معنا
+                                        كن معنا
             </p>
         </div>
 
@@ -66,23 +66,33 @@
                         <input type="text" id="capName" required placeholder="فادي محمد" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
                     </div>
                     <div>
-                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">رقم الهاتف (الواتساب)</label>
-                        <input type="tel" id="capPhone" required placeholder="07XXXXXXXX" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs text-left focus:outline-none focus:border-amber-500 transition" dir="ltr">
+                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">رقم الهاتف</label>
+                        <input type="tel" id="capPhone" required placeholder="07XXXXXXXX" maxlength="10" pattern="[0-9]{10}" title="يرجى إدخال 10 أرقام صحيحة" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs text-left focus:outline-none focus:border-amber-500 transition" dir="ltr" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div>
-                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">نوع المركبة (مثلاً: ديانا، قاطرة)</label>
-                        <input type="text" id="capCarType" required placeholder="باص / شاحنة / ديانا" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
+                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">نوع المركبة</label>
+                        <select id="capCarType" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
+                            <option value="" disabled selected>اختر نوع المركبة</option>
+                            <option value="كهرباء">كهرباء</option>
+                            <option value="بنزين">بنزين</option>
+                            <option value="هايبرد">هايبرد</option>
+                        </select>
                     </div>
                     <div>
                         <label class="block text-slate-300 text-xs font-semibold mb-1.5">موديل / سنة الصنع</label>
                         <input type="number" id="capCarModel" required placeholder="2024" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
                     </div>
                     <div>
-                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">رقم لوحة المركبة</label>
-                        <input type="text" id="capCarPlate" required placeholder="أردني - XXXXX" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
+                        <label class="block text-slate-300 text-xs font-semibold mb-1.5">عنوان السكن</label>
+                        <select id="capLocation" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-white text-xs focus:outline-none focus:border-amber-500 transition">
+                            <option value="" disabled selected>اختر عنوان السكن</option>
+                            <option value="عمان">عمان</option>
+                            <option value="اربد">اربد</option>
+                            <option value="الزرقاء">الزرقاء</option>
+                        </select>
                     </div>
                 </div>
 
@@ -103,20 +113,30 @@
         document.getElementById('captainForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const scriptUrl = 'https://script.google.com/macros/s/AKfycbxnaanpr38bcba-51DN-kl6yGyQA2pRvIfad4iHWaDKiMjYL96HL6wUg_0HfknM-Gtu/exec'; // ضع رابط الـ Apps Script الجديد هنا
+            const phoneInput = document.getElementById('capPhone').value;
+            const statusDiv = document.getElementById('formStatus');
+
+            // التأكد من أن رقم الهاتف 10 خانات بالضبط
+            if (phoneInput.length !== 10) {
+                statusDiv.classList.remove('hidden', 'bg-emerald-500/10', 'text-emerald-400');
+                statusDiv.classList.add('bg-red-500/10', 'text-red-400');
+                statusDiv.innerText = '❌ رقم الهاتف يجب أن يكون مكوناً من 10 خانات بالضبط.';
+                return;
+            }
+
+            const scriptUrl = 'https://script.google.com/macros/s/AKfycbxtMi8JODAvUakgw1UXARJl4d9SWTdEkebuUwmDVr-ppH3KmMnTBL0-aT1oYdWHfbsz/exec'; // رابط الـ Apps Script
             
             const submitBtn = document.getElementById('submitBtn');
-            const statusDiv = document.getElementById('formStatus');
             
             submitBtn.disabled = true;
-            submitBtn.innerText = 'جاري إرسال طلبك الفخم...';
+            submitBtn.innerText = 'جاري إرسال طلبك ...';
             
             const formData = {
                 name: document.getElementById('capName').value,
-                phone: document.getElementById('capPhone').value,
+                phone: phoneInput,
                 carType: document.getElementById('capCarType').value,
                 carModel: document.getElementById('capCarModel').value,
-                carPlate: document.getElementById('capCarPlate').value
+                location: document.getElementById('capLocation').value
             };
             
             fetch(scriptUrl, {
